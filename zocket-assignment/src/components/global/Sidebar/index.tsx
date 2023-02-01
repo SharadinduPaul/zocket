@@ -33,6 +33,18 @@ const SidebarIcon = ({
 
 export const Sidebar = () => {
   const [select, setSelect] = React.useState(0);
+  //this useeffect changes the selected icon when directed redirected to any non-index page
+  React.useEffect(() => {
+    const url = window.location.pathname;
+    if (url === "/campaign") {
+      setSelect(1);
+    } else if (url === "/products") {
+      setSelect(2);
+    } else if (url === "/customers") {
+      setSelect(3);
+    }
+  }, []);
+
   return (
     <div className="sidebar-main">
       <div className="logo">
