@@ -1,0 +1,15 @@
+.button-main {
+  border: none;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  width: max-content;
+
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

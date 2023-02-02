@@ -1,0 +1,9 @@
+.champaign-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.champaign-head .add{
+    height: 1.25rem;
+    filter: invert(1);
+}

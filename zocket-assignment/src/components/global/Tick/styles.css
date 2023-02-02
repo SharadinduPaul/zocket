@@ -1,0 +1,21 @@
+.tick-main{
+    background-color: #fff;
+    border: 2px solid var(--border-grey);
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+.tick-main > img{
+    height: 140%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -70%);
+    clip-path: circle(0.4% at 2% 76%);
+    transition: .5s;
+}
+.tick-main.selected > img{
+    clip-path: circle(123.9% at 2% 76%);
+}

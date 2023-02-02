@@ -4,5 +4,8 @@ import campaign from "./campaign.png";
 import products from "./products.png";
 import customers from "./customers.png";
 import user from "./user.png";
+import add from "./add.png";
+import tick from "./tick.png";
+import search from "./search.png";
 
-export { rocket, home, products, campaign, customers, user };
+export { rocket, home, products, campaign, customers, user, add, tick, search };

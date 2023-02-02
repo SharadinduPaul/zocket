@@ -1,0 +1,33 @@
+.filter-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.filter-main > .search-main {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--border-grey);
+  border-radius: var(--radius);
+  padding: 0 0.5rem;
+  box-sizing: content-box;
+  gap: 0.5rem;
+  width: 250px;
+  transition: .4s ;
+}
+.filter-main > .search-main:focus-within{
+    /* width: auto; */
+    flex: 1;
+    border: 2px solid #0009;
+}
+
+.filter-main > .search-main > img {
+  height: 1.5rem;
+  opacity: .75;
+}
+.filter-main > .search-main > input {
+  outline: none;
+  border: none;
+  height: 2.5rem;
+  flex: 1;
+}
