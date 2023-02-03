@@ -1,4 +1,5 @@
 import React from "react";
+import { Router, useNavigate } from "react-router-dom";
 import { add } from "../../../assets";
 import { mockData, MockDataProps } from "../../../data/mock-campaign-data";
 import { Button, ContentLayout, Text, Tick } from "../../global";
@@ -8,6 +9,7 @@ import "./styles.css";
 
 export const CampaignPage = () => {
   const [data, setData] = React.useState<MockDataProps[]>(mockData);
+  const navigate = useNavigate();
   return (
     <ContentLayout>
       <div className="champaign-head">
@@ -17,7 +19,7 @@ export const CampaignPage = () => {
             Check the list of campaigns you have created
           </Text>
         </span>
-        <Button onClick={() => alert("creating new campaign")}>
+        <Button onClick={() => navigate("/create-campaign")}>
           <img src={add} alt="add" className="add" />
           Create new campaign
         </Button>

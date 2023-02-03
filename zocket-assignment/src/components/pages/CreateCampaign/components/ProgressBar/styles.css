@@ -1,0 +1,29 @@
+.progress-main{
+    width: 100%;
+    height: 100px;
+    /* background-color: #faf; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 6rem;
+}
+.progress-main > span{
+    height: 5px;
+    flex: 1;
+    background-color: var(--accent-orange);
+}
+
+.stepcounter-main{
+    position: absolute;
+}
+.stepcounter-main > span{
+    background-color: var(--accent-orange);
+    /* padding: 1rem; */
+    /* border-radius: 50px; */
+}
+.stepcounter-main > span img{
+    --size: 2rem;
+    height: var(--size);
+    width: var(--size);
+    filter: invert(1);
+}

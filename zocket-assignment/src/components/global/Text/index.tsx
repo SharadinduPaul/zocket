@@ -4,7 +4,7 @@ import "./styles.css";
 interface TextProps {
   children?: any;
   style?: React.CSSProperties;
-  varient?: "title" | "content";
+  varient?: "title" | "content" | "mini";
   faded?: boolean;
 }
 export const Text = ({

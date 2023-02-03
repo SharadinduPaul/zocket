@@ -1,7 +1,9 @@
+export { Button } from "./Button";
+export { ContentLayout } from "./ContentLayout";
+export { Dropdown } from "./Dropdown";
 export { Layout } from "./Layout";
 export { Sidebar } from "./Sidebar";
-export { Topbar } from "./Topbar";
-export { ContentLayout } from "./ContentLayout";
+export { Switch } from "./Switch";
 export { Text } from "./Text";
-export { Button } from "./Button";
 export { Tick } from "./Tick";
+export { Topbar } from "./Topbar";

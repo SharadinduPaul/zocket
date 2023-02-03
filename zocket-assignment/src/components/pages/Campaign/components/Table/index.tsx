@@ -1,6 +1,7 @@
 import React from "react";
+import { rocket } from "../../../../../assets";
 import { MockDataProps } from "../../../../../data/mock-campaign-data";
-import { Text, Tick } from "../../../../global";
+import { Switch, Text, Tick } from "../../../../global";
 import "./styles.css";
 
 interface TableProps {
@@ -43,25 +44,30 @@ export const Table = ({ data, setData }: TableProps) => {
                   onClick={() => handleTick(index)}
                 />
               </td>
-              <td>slide</td>
+              <td>
+                <Switch />
+              </td>
               <td>
                 <div className="td-flex">
                   <img
-                    src={item?.imageUrl}
+                    src={rocket}
+                    // src={item?.imageUrl}
                     alt={item.title}
                     className="camp-img"
                   />
                   <span>
                     <p>{item.title}</p>
-                    <Text varient="content" style={{ fontSize: "12px" }} faded>
+                    <Text varient="mini" faded>
                       Created on {item?.createdOn}
                     </Text>
                   </span>
                 </div>
               </td>
-              <td>{item.dateRange.startDate}</td>
+              <td>
+                {item?.dateRange?.startDate} - {item?.dateRange?.endDate}
+              </td>
               <td>{item.clicks}</td>
-              <td>{item.budget}</td>
+              <td>INR {item.budget}</td>
               <td>{item.location}</td>
               <td>{item.platform}</td>
               <td>{item.status}</td>

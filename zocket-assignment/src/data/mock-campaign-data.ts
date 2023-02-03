@@ -113,3 +113,11 @@ export const mockData: MockDataProps[] = [
     status: "Live now",
   },
 ];
+
+export const platform_options: string[] = [
+  "facebook",
+  "google",
+  "youtube",
+  "instagram",
+];
+export const status_options: string[] = ["Live now", "Exausted", "Paused"];

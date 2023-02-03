@@ -1,0 +1,52 @@
+.switch-main {
+  --size: 40px;
+  width: var(--size);
+  background-color: var(--accent-color);
+  height: calc(var(--size) / 2.1);
+  border-radius: 50px;
+  outline: 2px solid var(--accent-color);
+  position: relative;
+  cursor: pointer;
+  filter: saturate(0%);
+  opacity: 0.8;
+  
+  transition: 0.2s;
+}
+.switch-main.selected{
+    filter: saturate(100%);
+
+}
+.switch-main > span {
+  height: calc(var(--size) / 2.1);
+  width: calc(var(--size) / 2.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  transition: 0.25s ease-in;
+}
+.switch-main > span::before,.switch-main > span::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 1.6px;
+    width: 60%;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+.switch-main > span::after{
+    transform: translate(-50%, -50%);
+}
+.switch-main > span::before{
+    transform: translate(-50%, -50%) ;
+    transition: .35s;
+}
+.switch-main.selected > span::before{
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.switch-main.selected > span {
+  transform: translateX(calc(var(--size) - var(--size) / 2.1));
+}

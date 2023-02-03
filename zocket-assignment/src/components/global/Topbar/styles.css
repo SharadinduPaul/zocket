@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: flex-end;
   padding: 0 1%;
+  gap: 1rem;
 }
 .topbar-main .user {
   display: flex;
@@ -17,7 +18,7 @@
 }
 .topbar-main .user img {
   height: 1rem;
-  border: 2px solid black;
+  border: 2px solid var(--accent-orange);
   box-sizing: content-box;
   padding: 2px;
   border-radius: 100px;
