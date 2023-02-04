@@ -18,7 +18,6 @@ export const Filter = ({ data, setData }: FilterProps) => {
   const [status, setStatus] = React.useState<string>("");
 
   const ApplyFilters = (item: MockDataProps) => {
-    // console.log(platform, item);
     let searchPassed = true,
       platformPassed = true,
       statusPassed = true;
@@ -55,6 +54,7 @@ export const Filter = ({ data, setData }: FilterProps) => {
       <div className="search-main">
         <img src={searchImg} alt="magnifyer" />
         <input
+          placeholder="Search for Campaign"
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target?.value)}

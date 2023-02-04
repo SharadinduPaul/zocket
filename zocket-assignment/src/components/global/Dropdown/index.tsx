@@ -1,4 +1,5 @@
 import React from "react";
+import { arrow, close } from "../../../assets";
 import { Text } from "../../global";
 import "./styles.css";
 
@@ -38,7 +39,7 @@ export const Dropdown = ({
               !!selected ? setSelect("") : setOpen((prev) => !prev)
             }
           >
-            {!!selected ? "x" : "v"}
+            <img src={!!selected ? close : arrow} alt="icon" />
           </span>
         </p>
         <span className={open ? "open" : ""}>

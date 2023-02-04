@@ -15,6 +15,10 @@
   --border-grey: rgb(230, 230, 230);
   --border-fade: rgba(0, 0, 0, 0.05);
   --radius: 8px;
+
+  --cherry-color: #FF5733;
+  --lime-color: #1e9e34;
+  --mustard-color: #e2b513;
 }
 html, body, #root{
   min-height: 100vh;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { add } from "../../../assets";
 import { mockData, MockDataProps } from "../../../data/mock-campaign-data";
 import { Button, ContentLayout, Text, Tick } from "../../global";
@@ -24,9 +24,14 @@ export const CampaignPage = () => {
           Create new campaign
         </Button>
       </div>
-      <main>
+      <main className="campaign-body">
         <Filter data={mockData} setData={setData} />
         <Table {...{ data, setData }} />
+        {data.length === 0 ? (
+          <Text className="no-campaign" faded>
+            No campaign to show
+          </Text>
+        ) : null}
       </main>
     </ContentLayout>
   );

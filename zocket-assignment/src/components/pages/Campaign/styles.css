@@ -7,3 +7,9 @@
     height: 1.25rem;
     filter: invert(1);
 }
+.campaign-body .no-campaign{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}

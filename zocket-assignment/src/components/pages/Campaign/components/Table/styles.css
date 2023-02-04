@@ -1,12 +1,12 @@
 .table-main {
   width: 100%;
-  border-spacing: 0 4px ;
+  border-spacing: 0 4px;
 }
 .table-main thead th {
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 2px solid var(--border-grey);
   border-bottom: 2px solid var(--border-grey);
-  font-size: 15px ;
+  font-size: 15px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
   padding: 0.7rem 1rem;
@@ -23,13 +23,53 @@
   padding: 0.4rem 1rem;
   text-align: left;
 }
-.table-main .td-flex{
-    display: flex;
-    align-items: center;
-    gap: .6rem;
+.table-main .td-flex {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
-.table-main .camp-img{
-    height: 3.6rem;
-    aspect-ratio: 1/1;
-    border-radius: var(--radius);
+.table-main .camp-img {
+  height: 3.6rem;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius);
+}
+.table-main .platform-icon {
+  height: 1.8rem;
+}
+.table-main .capsule-text {
+  color: var(--color);
+  text-align: center;
+  padding: 0.4rem;
+  border-radius: 100px;
+  position: relative;
+  overflow: hidden;
+  font-weight: 500;
+  z-index: 2;
+}
+.table-main .capsule-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color);
+  opacity: 0.15;
+  z-index: -1;
+}
+.table-main .action {
+  display: flex;
+  position: relative;
+  height: 2rem;
+  gap: 1rem;
+  padding: 0.2rem;
+}
+.table-main .action > img {
+  height: 100%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.table-main .action > img:active {
+  scale: 1.4;
 }

@@ -1,29 +1,65 @@
-.progress-main{
-    width: 100%;
-    height: 100px;
-    /* background-color: #faf; */
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 0 6rem;
+.progress-main {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
 }
-.progress-main > span{
-    height: 5px;
-    flex: 1;
-    background-color: var(--accent-orange);
+.progress-main > .below {
+  height: 5px;
+  width: calc(var(--step) * 33.33%);
+  background-color: var(--accent-orange);
+  position: absolute;
+  transition: 1s ease-in-out;
+  z-index: 2;
+}
+.progress-main > .above {
+  height: 5px;
+  flex: 1;
+  background-color: var(--border-grey);
 }
 
-.stepcounter-main{
-    position: absolute;
+.stepcounter-main {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: 0.1s 1s;
 }
-.stepcounter-main > span{
-    background-color: var(--accent-orange);
-    /* padding: 1rem; */
-    /* border-radius: 50px; */
+.stepcounter-main:nth-child(1) {
+  left: 0;
 }
-.stepcounter-main > span img{
-    --size: 2rem;
-    height: var(--size);
-    width: var(--size);
-    filter: invert(1);
+.stepcounter-main:nth-child(2) {
+  left: 33.33%;
+}
+.stepcounter-main:nth-child(3) {
+  left: 66.66%;
+}
+.stepcounter-main:nth-child(4) {
+  left: 100%;
+}
+.stepcounter-main > div {
+  background-color: var(--accent-orange);
+  --size: 4rem;
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 5px solid white;
+}
+.stepcounter-main > div img {
+  --size: 1.8rem;
+  height: var(--size);
+  width: var(--size);
+  filter: invert(1);
+}
+.stepcounter-main > p {
+  width: max-content;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
 }
