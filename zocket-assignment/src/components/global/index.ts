@@ -1,7 +1,9 @@
 export { Button } from "./Button";
 export { ContentLayout } from "./ContentLayout";
+export { DatePicker } from "./DatePicker";
 export { Dropdown } from "./Dropdown";
 export { Layout } from "./Layout";
+export { Modal } from "./Modal";
 export { Sidebar } from "./Sidebar";
 export { Switch } from "./Switch";
 export { Text } from "./Text";

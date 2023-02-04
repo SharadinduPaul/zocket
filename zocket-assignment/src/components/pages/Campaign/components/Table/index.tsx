@@ -34,7 +34,7 @@ export const Table = ({ data, setData }: TableProps) => {
       <thead>
         <tr>
           <th>
-            <Tick selected={false} onClick={() => alert("some")} />
+            <Tick selected={false} onClick={() => alert("doesn't work")} />
           </th>
           <th>On/Off</th>
           <th>Campaign</th>

@@ -1,0 +1,43 @@
+.campaign-name {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--border-grey);
+  width: 28rem;
+  height: 6rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: 0.15s;
+  max-width: 70vw;
+}
+.campaign-name:hover {
+  background-color: var(--bg-primary);
+}
+.campaign-name.selected {
+  background-color: var(--bg-primary);
+  border: 2px solid var(--accent-color);
+}
+.campaign-name > img {
+  height: 35%;
+  opacity: 0.4;
+  margin: 0 1rem;
+}
+.campaign-name > .content {
+  flex: 1;
+}
+
+.campaign-name > .tick {
+  --size: 1.4rem;
+  position: absolute;
+  top: calc(-1 * var(--size) / 2);
+  right: calc(-1 * var(--size) / 2);
+  height: var(--size);
+  width: var(--size);
+  background-color: var(--accent-color);
+  padding: 3px;
+  border-radius: 50%;
+}
+.campaign-name > .tick > img {
+  height: 100%;
+  filter: invert(1);
+}

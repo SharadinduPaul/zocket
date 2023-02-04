@@ -1,0 +1,20 @@
+.campaign-settings-main{
+
+}
+
+.text-wth-number{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.text-wth-number > span{
+    background-color: var(--accent-color);
+    color: #fff;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}

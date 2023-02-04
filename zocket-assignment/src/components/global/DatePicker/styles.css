@@ -1,0 +1,24 @@
+.datepicker-main{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: .8rem 0 0.8rem 0.8rem;
+    border: 2px solid var(--border-grey);
+    border-radius: var(--radius);
+}
+.datepicker-main > input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.datepicker-main > input:focus{
+    outline: none;
+}
+.datepicker-main > input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    width: 30px;
+    height: 20px;
+    border-width: thin;
+}

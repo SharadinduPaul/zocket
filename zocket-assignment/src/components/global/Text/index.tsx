@@ -7,6 +7,7 @@ interface TextProps {
   style?: React.CSSProperties;
   varient?: "title" | "content" | "mini";
   faded?: boolean;
+  underline?: boolean;
 }
 export const Text = ({
   children,
@@ -14,10 +15,15 @@ export const Text = ({
   className,
   varient = "content",
   faded,
+  underline,
 }: TextProps) => {
   return (
     <div
-      style={{ ...style, opacity: faded ? "0.7" : "1" }}
+      style={{
+        ...style,
+        opacity: faded ? "0.7" : "1",
+        textDecoration: underline ? "underline" : "none",
+      }}
       className={`text-main ${varient} ${className}`}
     >
       {children}
