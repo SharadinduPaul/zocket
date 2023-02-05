@@ -38,7 +38,7 @@ export const CreateCampaignPage = () => {
   return (
     <ContentLayout>
       <Modal open={modal} onClose={() => setModal(false)}>
-        <Text varient="title">Campaign Created</Text>
+        <Text varient="title">Campaign Created!</Text>
         <Text faded varient="mini">
           The selected data can now be sent to backend...
         </Text>

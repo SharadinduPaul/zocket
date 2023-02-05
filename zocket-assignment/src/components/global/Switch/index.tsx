@@ -1,12 +1,15 @@
 import React from "react";
 import "./styles.css";
 
-export const Switch = () => {
-  const [selected, setSelected] = React.useState<boolean>(false);
+interface SwitchProps {
+  select: boolean;
+  onClick: () => void;
+}
+export const Switch = ({ select, onClick }: SwitchProps) => {
   return (
     <div
-      className={`switch-main ${selected ? "selected" : ""}`}
-      onClick={() => setSelected(!selected)}
+      className={`switch-main ${select ? "selected" : ""}`}
+      onClick={onClick}
     >
       <span />
     </div>

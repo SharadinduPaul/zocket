@@ -10,6 +10,11 @@ import "./styles.css";
 export const CampaignPage = () => {
   const [data, setData] = React.useState<MockDataProps[]>(mockData);
   const navigate = useNavigate();
+
+  React.useEffect(() => {
+    document.title = "Campaigns - Zocket Dashboard";
+  }, []);
+
   return (
     <ContentLayout>
       <div className="champaign-head">
